@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>8aratta - Code Snippet</title>
+</head>
+<body>
+    <script>
+    var youtubeVideoList = [
+    "https://www.youtube.com/embed/bLWGIYYEKfg?autoplay=1&controls=0&amp",
+    "https://www.youtube.com/embed/4o5baMYWdtQ?autoplay=1&controls=0&amp",
+    "https://www.youtube.com/embed/5ga8a4EjJlY?autoplay=1&controls=0&amp"];
+
+    function playRandomVideo() {
+    var x = Math.floor(Math.random() * 3);
+    document.getElementById("YouTubeContainer").src = youtubeVideoList[x];
+    }
+    </script>
+
+    <iframe id="YouTubeContainer" src="about:blank" autoplay="1"></iframe><br>
+    <button onclick="playRandomVideo();">Random YouTube Video</button>
+</body>
+</html>
